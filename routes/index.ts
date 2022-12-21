@@ -3,16 +3,19 @@ import { Express } from "express"
 
 import route from "./route"
 
-interface routerApiParams<T> {
-  resources: T[]
+interface routerApiParams {
+  resources: any[],
+  url: string,
 }
 
-function routerApi<T>({ resources }: routerApiParams<T>) {
+function routerApi(routerApis: routerApiParams[]) {
   return (app: Express) => {
     const router = express.Router()
 
     app.use("/api/v1", router)
-    router.use("/saucers", route(resources))
+    routerApis.forEach(({ url, resources }: routerApiParams) => {
+      router.use(url, route(resources))
+    })
   }
 }
 

@@ -1,11 +1,11 @@
 import express from "express"
 import routerApi from "./routes"
-import { saucers } from "./mocks/response/saucers"
+import data from "./mocks/response"
 
 const app = express()
 
 app.use(express.json())
-routerApi({ resources: saucers })(app)
+routerApi(data)(app)
 
 app.listen(3000, () => {
   console.log("El servidor está inicializado en el puerto 3000")
