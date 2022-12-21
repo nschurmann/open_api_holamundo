@@ -1,0 +1,213 @@
+### Linux ###
+*~
+
+# archivos temporales que se pueden crear si un proceso todavía tiene un identificador abierto de un archivo eliminado
+.fuse_hidden*
+
+# Preferencias de directorio de KDE
+.directory
+
+# Carpeta de basura de Linux que puede aparecer en cualquier partición o disco
+.Trash-*
+
+# Los archivos .nfs se crean cuando se elimina un archivo abierto pero aún se accede a él
+.nfs*
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# El ícono debe terminar con dos \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Archivos que pueden aparecer en la raíz de un volumen
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directorios potencialmente creados en recursos compartidos AFP remotos
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Parche macOS ###
+# Archivos generados por iCloud
+*.icloud
+
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Informes de diagnóstico (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Datos de tiempo de ejecución
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Directorio para bibliotecas instrumentadas generadas por jscoverage/JSCover
+lib-cov
+
+# Directorio de cobertura utilizado por herramientas como estambul
+coverage
+*.lcov
+
+# cobertura de prueba de nyc
+.nyc_output
+
+# Grunt almacenamiento intermedio (https://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Directorio de dependencias de Bower (https://bower.io/)
+bower_components
+
+# configuración node-waf 
+.lock-wscript
+
+# Complementos binarios compilados (https://nodejs.org/api/addons.html)
+build/Release
+
+# directorios de dependencia
+node_modules/
+jspm_packages/
+
+# Directorio de dependencias de Snowpack (https://snowpack.dev/)
+web_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Directorio de caché npm opcional
+.npm
+
+# Caché eslint opcional
+.eslintcache
+
+# Caché de estilo opcional
+.stylelintcache
+
+# Caché de micropaquetes
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Historial de REPL opcional
+.node_repl_history
+
+# Salida de 'paquete npm'
+*.tgz
+
+# Archivo de integridad Yarn
+.yarn-integrity
+
+# archivos de variables de entorno dotenv
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Salida de compilación de Next.js
+.next
+out
+
+# Nuxt.js construir/generar salida
+.nuxt
+dist
+
+# Archivos de Gatsby
+.cache/
+# Comenta en la línea pública si tu proyecto usa Gatsby y no Next.js
+# https://nextjs.org/blog/next-9-1#public-directory-support
+# public
+
+# salida de compilación de vuepress
+.vuepress/dist
+
+# vuepress v2.x directorio temporal y caché
+.temp
+
+# Caché de Docusaurus y archivos generados
+.docusaurus
+
+# Directorios Serverless 
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# Archivos locales DynamoDB 
+.dynamodb/
+
+# Archivo de puerto TernJS
+.tern-port
+
+# Almacena las versiones de VSCode utilizadas para probar las extensiones de VSCode
+.vscode-test
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+### Parche de Node ###
+# Directorios de webpack serverless
+.webpack/
+
+# Caché de estilo opcional
+
+# SvelteKit build / salida 
+.svelte-kit
+
+### Windows ###
+# Archivos de caché de miniaturas de Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Archivo Dump 
+*.stackdump
+
+# Archvivo de configuración Folder
+[Dd]esktop.ini
+
+# Papelera de reciclaje utilizada en recursos compartidos de archivos
+$RECYCLE.BIN/
+
+# Archivos del instalador de Windows
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Atajos de Windows
+*.lnk
