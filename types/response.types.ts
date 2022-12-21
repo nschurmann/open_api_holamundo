@@ -1,4 +1,4 @@
-export interface saucerItem {
+export interface SaucerItem {
   id: number
   name: string
   country: Country
@@ -21,6 +21,12 @@ export interface saucerItem {
     fiber: number
   },
   necessaryUtensils: string[]
+}
+
+export interface CountryItem {
+  id: number
+  name: Country
+  saucers: string[]
 }
 
 type Country = "Argentina" | "Bolivia" | "Brasil" | "Chile" | "Colombia" | "España" | "México" | "Perú" | "Uruguay" | "Venezuela" 

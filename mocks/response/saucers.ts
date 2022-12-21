@@ -1,8 +1,8 @@
-import { saucerItem } from "../../types/response.types"
+import { SaucerItem } from "../../types/response.types"
 
 export const url = '/saucers'
 
-export const resources: saucerItem[] = [
+export const resources: SaucerItem[] = [
   {
     id: 1,
     name: "Asado argentino",
