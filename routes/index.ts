@@ -1,13 +1,19 @@
 import express from "express"
 import { Express } from "express"
 
-import saucersRouter from "./saucers.router"
+import route from "./route"
 
-function routerApi(app: Express) {
-  const router = express.Router()
-  app.use("/api/v1", router)
+interface routerApiParams<T> {
+  resources: T[]
+}
 
-  router.use("/saucers", saucersRouter)
+function routerApi<T>({ resources }: routerApiParams<T>) {
+  return (app: Express) => {
+    const router = express.Router()
+
+    app.use("/api/v1", router)
+    router.use("/saucers", route(resources))
+  }
 }
 
 export default routerApi
