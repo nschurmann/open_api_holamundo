@@ -1,7 +1,7 @@
 import express from "express"
 import { Express } from "express"
-
 import route from "./route"
+
 
 interface routerApiParams {
   resources: any[],

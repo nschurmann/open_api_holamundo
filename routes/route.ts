@@ -1,29 +1,29 @@
 import { Router } from "express"
 
-const route: (router: any[]) => Router = (resources) => {
-  const router = Router()
+function route(resources: any[]) {
+    const router = Router()
 
-  router.get("/", (req, res) => {
-    res.status(200).json(resources)
-  })
+    router.get("/", (_req, res) => {
+        res.status(200).json(resources)
+    })
 
-  router.post("/", (req, res) => {
-    res.status(201).send({ id: resources.length + 1 })
-  })
+    router.post("/", (_req, res) => {
+        res.status(201).send({ id: resources.length + 1 })
+    })
 
-  router.put("/", (req, res) => {
-    res.sendStatus(204)
-  })
+    router.put("/", (_req, res) => {
+        res.sendStatus(204)
+    })
 
-  router.patch("/", (req, res) => {
-    res.sendStatus(204)
-  })
+    router.patch("/", (_req, res) => {
+        res.sendStatus(204)
+    })
 
-  router.delete("/", (req, res) => {
-    res.sendStatus(204)
-  })
+    router.delete("/", (_req, res) => {
+        res.sendStatus(204)
+    })
 
-  return router
+    return router
 }
 
 export default route
